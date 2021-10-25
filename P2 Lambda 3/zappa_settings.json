@@ -1,0 +1,32 @@
+{
+"dev": {
+        "app_function": "third.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "parcial3",
+        "runtime": "python3.8",
+        "s3_bucket": "punto2parcial2",
+	"keep_warm": false,
+	"apigateway_enabled":false
+	 "Version": "2012-10-17",
+  	"Statement": [
+    	{
+      	"Sid": "Stmt1547414166585",
+      	"Action": [
+        	"athena:StartQueryExecution"
+      	],
+      	"Effect": "Allow",
+      	"Resource": "*"
+    	},
+    	{
+      	"Sid": "Stmt1547414166586",
+      	"Action": [
+        	"s3:*"
+      	],
+      	"Effect": "Allow",
+      	"Resource": "arn:aws:s3:::punto2parcial2/*"
+    	} 
+  	]	
+    	}
+
+}

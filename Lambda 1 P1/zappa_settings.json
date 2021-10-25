@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "app_function": "app.handler",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "parcial_p1_l1",
+        "runtime": "python3.8",
+        "s3_bucket": "punto1parcial",
+	"keep_warm": false,
+	"apigateway_enabled":false,		
+	
+    }
+
+}
